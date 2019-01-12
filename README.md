@@ -10,5 +10,5 @@ Just right-click on your project, find the menu item labeled "Set language versi
 
 You can download the extension from the Visual Studio MarketPlace:
 
-If you are interested in the technical details of the project, checkout my blog post on making the extension:
+If you are interested in the technical details of the project, checkout my blog post on making the extension: https://dotnetfalcon.com/visual-studio-extension-to-change-the-c-language-version-of-a-project
 
