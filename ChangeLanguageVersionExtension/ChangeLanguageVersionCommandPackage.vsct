@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidChangeLanguageVersionCommandPackage">
+    <Menus>
+      <Menu guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDM_VS_CSCD_PROJECT_SETLANGVER" priority="0x0101" type="Menu">
+        <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER"/>
+        <Strings>
+          <ButtonText>Set language version</ButtonText>
+          <CommandName>Set language version</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Groups>
+      <Group guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER" priority="0x0101">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
+      </Group>
+
+      <Group guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS" priority="0x0301">
+        <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDM_VS_CSCD_PROJECT_SETLANGVER"/>
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToDefault" priority="0x0000" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>default</ButtonText>
+          <MenuText>default</MenuText>
+          <ToolTipText>default</ToolTipText>
+          <CommandName>default</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToLatest" priority="0x0001" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>latest</ButtonText>
+          <MenuText>latest</MenuText>
+          <ToolTipText>latest</ToolTipText>
+          <CommandName>latest</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp5" priority="0x0002" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>C# 5</ButtonText>
+          <MenuText>C# 5</MenuText>
+          <ToolTipText>C# 5</ToolTipText>
+          <CommandName>C# 5</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp6" priority="0x0003" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>C# 6</ButtonText>
+          <MenuText>C# 6</MenuText>
+          <ToolTipText>C# 6</ToolTipText>
+          <CommandName>C# 6</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp7" priority="0x0004" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>C# 7</ButtonText>
+          <MenuText>C# 7</MenuText>
+          <ToolTipText>C# 7</ToolTipText>
+          <CommandName>C# 7</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp71" priority="0x0005" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>C# 7.1</ButtonText>
+          <MenuText>C# 7.1</MenuText>
+          <ToolTipText>C# 7.1</ToolTipText>
+          <CommandName>C# 7.1</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp72" priority="0x0006" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>C# 7.2</ButtonText>
+          <MenuText>C# 7.2</MenuText>
+          <ToolTipText>C# 7.2</ToolTipText>
+          <CommandName>C# 7.2</CommandName>
+        </Strings>
+      </Button>
+
+      <Button guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp73" priority="0x0007" type="Button">
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>C# 7.3</ButtonText>
+          <MenuText>C# 7.3</MenuText>
+          <ToolTipText>C# 7.3</ToolTipText>
+          <CommandName>C# 7.3</CommandName>
+        </Strings>
+      </Button>
+    </Buttons>
+
+  </Commands>
+
+  <CommandPlacements>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToDefault" priority="0x0201">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToLatest" priority="0x0202">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp5" priority="0x0203">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp6" priority="0x0204">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp7" priority="0x0205">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp71" priority="0x0206">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp72" priority="0x0207">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+    <CommandPlacement guid="guidChangeLanguageVersionCommandPackageCmdSet" id="cmdSetToCSharp73" priority="0x0208">
+      <Parent guid="guidChangeLanguageVersionCommandPackageCmdSet" id="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS"/>
+    </CommandPlacement>
+  </CommandPlacements>
+  
+  <Symbols>
+    <GuidSymbol name="guidChangeLanguageVersionCommandPackage" value="{7539965f-1675-4b78-a8c1-648e4de69be4}" />
+    <GuidSymbol name="guidChangeLanguageVersionCommandPackageCmdSet" value="{d09ad2ce-4234-462e-a4d4-9ce671cdd420}">
+      <IDSymbol name="IDG_VS_CTXT_PROJECT_SETLANGVER" value="0x1020" />
+      <IDSymbol name="IDG_VS_CTXT_PROJECT_SETLANGVER_OPTIONS" value="0x1028" />
+      <IDSymbol name="IDM_VS_CSCD_PROJECT_SETLANGVER" value="0x0100" />
+      <IDSymbol name="cmdSetToDefault"  value="0x0F00" />
+      <IDSymbol name="cmdSetToLatest"  value="0x0F01" />
+      <IDSymbol name="cmdSetToCSharp5"  value="0x0F02" />
+      <IDSymbol name="cmdSetToCSharp6"  value="0x0F03" />
+      <IDSymbol name="cmdSetToCSharp7"  value="0x0F04" />
+      <IDSymbol name="cmdSetToCSharp71"  value="0x0F05" />
+      <IDSymbol name="cmdSetToCSharp72"  value="0x0F06" />
+      <IDSymbol name="cmdSetToCSharp73"  value="0x0F07" />
+    </GuidSymbol>    
+  </Symbols>
+</CommandTable>
