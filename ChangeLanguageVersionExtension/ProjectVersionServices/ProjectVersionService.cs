@@ -16,7 +16,7 @@ namespace ChangeLanguageVersionExtension.ProjectVersionServices
     [SuppressMessage("Usage", "VSTHRD010:Invoke single-threaded types on Main thread", Justification = "Member is only called from the Main thread", Scope = "member", Target = "~M:ChangeLanguageVersionExtension.ProjectVersionService.GetActiveProject()")]
     public class ProjectVersionService : IProjectVersionService
     {
-        private const string msenvDll = "msenv.dll";
+        private const string devenvExe = "devenv.exe";
         private const string langVersionIndexer = "LanguageVersion";
         private readonly DTE2 dte;
         public ProjectVersionService(DTE2 dte)
@@ -38,7 +38,7 @@ namespace ChangeLanguageVersionExtension.ProjectVersionServices
         }
         private Version GetVisualStudioVersion()
         {
-            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, msenvDll);
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, devenvExe);
             var fvi = FileVersionInfo.GetVersionInfo(path);
 
             string verName = fvi.ProductVersion;
