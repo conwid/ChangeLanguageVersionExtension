@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ChangeLanguageVersionExtension.9e6bc9ad-ab91-4c7a-ac3f-594029f8d216" Version="1.0" Language="en-US" Publisher="Ákos Nagy" />
-        <DisplayName>ChangeLanguageVersionExtension</DisplayName>
-        <Description>Empty VSIX Project.</Description>
+        <Identity Id="ChangeLanguageVersionExtension.9e6bc9ad-ab91-4c7a-ac3f-594029f8d216" Version="1.0" Language="en-US" Publisher="conwid" />
+        <DisplayName>Change language version easily</DisplayName>
+        <Description xml:space="preserve">Allows you to change the language version of a project from the context menu of the project.</Description>
+        <MoreInfo>https://github.com/conwid/ChangeLanguageVersionExtension</MoreInfo>
+        <License>LICENSE.txt</License>
+        <GettingStartedGuide>https://github.com/conwid/ChangeLanguageVersionExtension</GettingStartedGuide>
+        <Tags>C#, language version</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0, 16.0)" />
