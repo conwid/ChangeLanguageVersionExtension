@@ -13,12 +13,10 @@ namespace ChangeLanguageVersionExtension
   
     internal sealed class ChangeLanguageVersionCommand : OleMenuCommand
     {
-
         private readonly IProjectVersionService projectVersionService;
         private readonly AsyncPackage package;
         public string LanguageVersion { get; }
         public event EventHandler OnChecked;
-
 
         public ChangeLanguageVersionCommand(AsyncPackage package, IProjectVersionService projectVersionService, string languageVersion, CommandID id) : base(Execute, id)
         {

@@ -26,7 +26,9 @@ namespace ChangeLanguageVersionExtension.ProjectVersionServices
         private Project GetActiveProject()
         {
             if (dte.ActiveSolutionProjects is Array activeSolutionProjects && activeSolutionProjects.Length > 0)
+            {
                 return activeSolutionProjects.GetValue(0) as Project;
+            }
 
             Document doc = dte.ActiveDocument;
             if (doc != null && !string.IsNullOrEmpty(doc.FullName))
@@ -80,12 +82,12 @@ namespace ChangeLanguageVersionExtension.ProjectVersionServices
         public void SetLanguageVersion(string version)
         {
             var project = GetActiveProject();
-            project.ConfigurationManager.ActiveConfiguration.Properties.Item(langVersionIndexer).Value = version;            
+            project.ConfigurationManager.ActiveConfiguration.Properties.Item(langVersionIndexer).Value = version;
             project.Save();
         }
 
-        public string GetLanguageVersion() 
-            => (string)GetActiveProject().ConfigurationManager.ActiveConfiguration.Properties.Item(langVersionIndexer).Value;            
-        
+        public string GetLanguageVersion()
+            => (string)GetActiveProject().ConfigurationManager.ActiveConfiguration.Properties.Item(langVersionIndexer).Value;
+
     }
 }
