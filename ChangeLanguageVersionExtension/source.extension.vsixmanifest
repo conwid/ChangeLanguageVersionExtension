@@ -7,6 +7,7 @@
         <MoreInfo>https://github.com/conwid/ChangeLanguageVersionExtension</MoreInfo>
         <License>LICENSE.txt</License>
         <GettingStartedGuide>https://github.com/conwid/ChangeLanguageVersionExtension</GettingStartedGuide>
+        <Icon>changelv_icon.png</Icon>
         <Tags>C#, language version</Tags>
     </Metadata>
     <Installation>
