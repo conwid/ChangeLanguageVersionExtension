@@ -34,12 +34,15 @@ namespace ChangeLanguageVersionExtension
         private readonly List<(string version, int commandId)> versionCommands = new List<(string version, int commandId)> {
                                                                                                                         (LanguageVersions.Default,PackageIds.cmdSetToDefault),
                                                                                                                         (LanguageVersions.Latest,PackageIds.cmdSetToLatest),
+                                                                                                                        (LanguageVersions.LatestMajor,PackageIds.cmdSetToLatestMajor),
                                                                                                                         (LanguageVersions.CSharp5, PackageIds.cmdSetToCSharp5),
                                                                                                                         (LanguageVersions.CSharp6, PackageIds.cmdSetToCSharp6),
                                                                                                                         (LanguageVersions.CSharp7, PackageIds.cmdSetToCSharp7),
                                                                                                                         (LanguageVersions.CSharp71, PackageIds.cmdSetToCSharp71),
                                                                                                                         (LanguageVersions.CSharp72, PackageIds.cmdSetToCSharp72),
                                                                                                                         (LanguageVersions.CSharp73, PackageIds.cmdSetToCSharp73),
+                                                                                                                        (LanguageVersions.CSharp8, PackageIds.cmdSetToCSharp8),
+                                                                                                                        (LanguageVersions.Preview, PackageIds.cmdSetToPreview),
                                                                                                                       };        
 
         private void HandleChecked(object sender, EventArgs e)

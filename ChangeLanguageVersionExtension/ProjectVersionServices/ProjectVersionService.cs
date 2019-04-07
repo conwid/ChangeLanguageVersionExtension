@@ -60,7 +60,13 @@ namespace ChangeLanguageVersionExtension.ProjectVersionServices
         {
             var version = GetVisualStudioVersion();
             var availableVersions = new HashSet<string> { LanguageVersions.Default, LanguageVersions.Latest, LanguageVersions.CSharp5, LanguageVersions.CSharp6 };
-            if (version.Major >= 15)
+            if (version.Major>=16)
+            {
+                availableVersions.Add(LanguageVersions.LatestMajor);
+                availableVersions.Add(LanguageVersions.CSharp8);
+                availableVersions.Add(LanguageVersions.Preview);
+            }
+            else if (version.Major >= 15)
             {
                 availableVersions.Add(LanguageVersions.CSharp7);
                 if (version.Minor >= 3)
@@ -86,8 +92,10 @@ namespace ChangeLanguageVersionExtension.ProjectVersionServices
             project.Save();
         }
 
-        public string GetLanguageVersion()
-            => (string)GetActiveProject().ConfigurationManager.ActiveConfiguration.Properties.Item(langVersionIndexer).Value;
+        public string GetLanguageVersion() =>
+            GetActiveProject()?.ConfigurationManager?.ActiveConfiguration
+                              ?.Properties?.Item(langVersionIndexer)?.Value as string ?? LanguageVersions.Default;
+        
 
     }
 }

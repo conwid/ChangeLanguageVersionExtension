@@ -27,11 +27,14 @@ namespace ChangeLanguageVersionExtension
         public const int IDM_VS_CSCD_PROJECT_SETLANGVER = 0x0100;
         public const int cmdSetToDefault = 0x0F00;
         public const int cmdSetToLatest = 0x0F01;
-        public const int cmdSetToCSharp5 = 0x0F02;
-        public const int cmdSetToCSharp6 = 0x0F03;
-        public const int cmdSetToCSharp7 = 0x0F04;
-        public const int cmdSetToCSharp71 = 0x0F05;
-        public const int cmdSetToCSharp72 = 0x0F06;
-        public const int cmdSetToCSharp73 = 0x0F07;
+        public const int cmdSetToLatestMajor = 0x0F02;
+        public const int cmdSetToCSharp5 = 0x0F03;
+        public const int cmdSetToCSharp6 = 0x0F04;
+        public const int cmdSetToCSharp7 = 0x0F05;
+        public const int cmdSetToCSharp71 = 0x0F06;
+        public const int cmdSetToCSharp72 = 0x0F07;
+        public const int cmdSetToCSharp73 = 0x0F08;
+        public const int cmdSetToCSharp8 = 0x0F09;
+        public const int cmdSetToPreview = 0x0F0A;
     }
 }
